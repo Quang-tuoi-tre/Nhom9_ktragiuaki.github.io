@@ -1,0 +1,138 @@
+/* Reset margin và padding của các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    padding-top: 60px;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+header .navbar a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+/* Định dạng cho các section */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section#home {
+    background-color: #eaf2f8;
+}
+
+section#about {
+    background-color: #fff;
+}
+
+section#projects {
+    background-color: #f9fafb;
+}
+
+section#contact {
+    background-color: #ffffff;
+}
+
+/* Hình ảnh */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Các dự án */
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Thêm button */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+/* Media query cho mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
