@@ -4,65 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Cá Nhân</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Trang Cá Nhân</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Về tôi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Dự án</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Liên hệ</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Trang Cá Nhân</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Đoàn Lục Quốc Duy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Cao Hiếu Đạt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Vũ Hoàng Tấn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Phạm Minh Thịnh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Đinh Nho Bảo Nam</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <section id="home" class="container my-5">
-        <h2>Chào mừng đến với trang cá nhân của tôi!</h2>
-        <p>Giới thiệu về nhóm công nghệ phần mềm.</p>
+    <!-- Home Section -->
+    <section id="home" class="container text-center my-5 py-5">
+        <h1 class="display-4">Chào mừng đến với trang cá nhân của tôi!</h1>
+        <p class="lead">Giới thiệu về nhóm công nghệ phần mềm.</p>
     </section>
 
-    <section id="about" class="container my-5">
-        <h2>Về tôi</h2>
-        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Image" class="profile-img">
-        <p>Xin chào! Tôi là một lập trình viên đam mê công nghệ, đặc biệt là phát triển web. Dưới đây là những thông tin cá nhân và quá trình học tập của tôi.</p>
-    </section>
-
-    <section id="projects" class="container my-5">
-        <h2>Dự án</h2>
-        <div class="project">
-            <h3>Dự án 1</h3>
-            <p>Mô tả về dự án của tôi.</p>
-        </div>
-        <div class="project">
-            <h3>Dự án 2</h3>
-            <p>Mô tả về dự án của tôi.</p>
+    <!-- About Section -->
+    <section id="about" class="container my-5 py-5">
+        <h2 class="text-center">Về tôi</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Image" class="profile-img img-fluid rounded-circle shadow">
+            </div>
+            <div class="col-md-8">
+                <p>Xin chào! Tôi là một lập trình viên đam mê công nghệ, đặc biệt là phát triển web. Tôi luôn tìm kiếm cơ hội để phát triển kỹ năng và học hỏi thêm về công nghệ mới.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="container my-5">
-        <h2>Liên hệ</h2>
-        <p>Email: <span id="email">email@example.com</span></p>
-        <button id="emailButton" class="btn btn-primary">Hiển thị Email</button>
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5 py-5">
+        <h2 class="text-center">Dự án của tôi</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project-card shadow-lg p-4 mb-4 rounded">
+                    <h3>Dự án 1</h3>
+                    <p>Mô tả về dự án của tôi.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card shadow-lg p-4 mb-4 rounded">
+                    <h3>Dự án 2</h3>
+                    <p>Mô tả về dự án của tôi.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="text-center py-4">
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5 py-5">
+        <h2 class="text-center">Liên hệ</h2>
+        <p class="text-center">Email: <span id="email">email@example.com</span></p>
+        <button id="emailButton" class="btn btn-primary mx-auto d-block">Hiển thị Email</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-primary text-white">
         <p>&copy; 2025 Trang cá nhân của tôi</p>
     </footer>
 
