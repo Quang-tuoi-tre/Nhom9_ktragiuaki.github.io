@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân - Vũ Hoàng Tấn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(120deg, #f0f4ff, #dfe9f3);
+        }
+        .navbar {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            transition: transform 0.3s;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .footer {
+            background: #6e8efb;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+    </style>
+</head>
+
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Trang Cá Nhân</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Đoàn Lục Quốc Duy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Cao Hiếu Đạt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="students/Hoangtan.html">Vũ Hoàng Tấn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Phạm Minh Thịnh</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Đinh Nho Bảo Nam</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+    <section class="hero">
+        <h1 class="display-4 fw-bold">Chào mừng đến với trang cá nhân của tôi!</h1>
+        <p class="lead">Lập trình viên đam mê công nghệ và kiểm thử phần mềm.</p>
+    </section>
+    
+    <section id="about" class="section container text-center">
+        <h2 class="fw-bold">Về Tôi</h2>
+        <img src="https://avatars.githubusercontent.com/u/162791086?s=400" class="profile-img my-3">
+        <p>Tôi là Vũ Hoàng Tấn, một lập trình viên đam mê công nghệ, mong muốn phát triển sự nghiệp trong lĩnh vực kiểm thử phần mềm.</p>
+    </section>
+    
+    <section id="projects" class="section container">
+        <h2 class="fw-bold text-center">Dự Án Của Tôi</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h3 class="text-primary">Web Quản Lý Thú Cưng</h3>
+                    <p>Hệ thống giúp khách hàng đặt lịch chăm sóc thú cưng trực tuyến.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h3 class="text-primary">Hệ Thống Đặt Vé Xem Phim</h3>
+                    <p>Xây dựng hệ thống đặt vé online với các tính năng thanh toán tiện lợi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section container text-center">
+        <h2 class="fw-bold">Liên Hệ</h2>
+        <p>Email: <a href="mailto:xuxiboynuttertools@gmail.com">xuxiboynuttertools@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/VuHoangTan" target="_blank">github.com/VuHoangTan</a></p>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Trang Cá Nhân - Vũ Hoàng Tấn</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
